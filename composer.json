@@ -7,6 +7,11 @@
             "email": "igordepaula@adminweb.com.br"
         }
     ],
+    "autoload":{
+        "psr-4":{
+            "Application\\":"src/"
+        }
+    },
     "require": {
     	"phpex/inspector":"dev-master",
     	"phpex/mvc":"dev-master"

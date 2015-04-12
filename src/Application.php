@@ -31,10 +31,9 @@ class Application
 		}
 	}
 
-	private function map($prop){		
-		$uri = $_SERVER['REQUEST_URI'];
+	private function map($prop){	
 		list($class,$method) = explode(':',$prop['action']);
  		$object = new $class();
- 		$object->validate($prop['Inspector\Controller\Route'],$uri,$method);
+ 		$object->validate($prop['Inspector\Controller\Route'],$method);
 	}
 }
